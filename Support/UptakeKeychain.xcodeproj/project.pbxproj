@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C102216E1F228F6E00E40924 /* UptakeKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10221641F228F6E00E40924 /* UptakeKeychain.framework */; };
+		C12F73A21F294506002AE1B9 /* .jazzy.yaml in Resources */ = {isa = PBXBuildFile; fileRef = C12F73A11F294506002AE1B9 /* .jazzy.yaml */; };
+		C12F73A41F2945FA002AE1B9 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F73A31F2945FA002AE1B9 /* KeychainService.swift */; };
+		C12F73A81F2946D0002AE1B9 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F73A71F2946D0002AE1B9 /* KeychainError.swift */; };
+		C1C6F2F11F75911B001FB614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6F2F01F75911B001FB614 /* AppDelegate.swift */; };
+		C1C6F2F31F75911B001FB614 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6F2F21F75911B001FB614 /* ViewController.swift */; };
+		C1C6F2F61F75911B001FB614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C6F2F41F75911B001FB614 /* Main.storyboard */; };
+		C1C6F2F81F75911B001FB614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C6F2F71F75911B001FB614 /* Assets.xcassets */; };
+		C1C6F2FB1F75911B001FB614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C6F2F91F75911B001FB614 /* LaunchScreen.storyboard */; };
+		C1DA1D8F1F22935600DCE72F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA1D8E1F22935600DCE72F /* KeychainHelper.swift */; };
+		C1DA1D911F22938E00DCE72F /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA1D901F22938E00DCE72F /* Logging.swift */; };
+		C1DA1D961F229B8300DCE72F /* KeychainHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA1D941F229B7C00DCE72F /* KeychainHelperTests.swift */; };
+		C1DA1D991F22A04800DCE72F /* UptakeToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DA1D981F22A04800DCE72F /* UptakeToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C102216F1F228F6E00E40924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C102215B1F228F6E00E40924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10221631F228F6E00E40924;
+			remoteInfo = "uptake-keychain-ios";
+		};
+		C1C6F3001F759121001FB614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C102215B1F228F6E00E40924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1C6F2ED1F75911B001FB614;
+			remoteInfo = TestHost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C10221641F228F6E00E40924 /* UptakeKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UptakeKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C102216D1F228F6E00E40924 /* UptakeKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UptakeKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12F73A11F294506002AE1B9 /* .jazzy.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .jazzy.yaml; path = ../.jazzy.yaml; sourceTree = "<group>"; };
+		C12F73A31F2945FA002AE1B9 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		C12F73A71F2946D0002AE1B9 /* KeychainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		C1C6F2EE1F75911B001FB614 /* TestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C6F2F01F75911B001FB614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1C6F2F21F75911B001FB614 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1C6F2F51F75911B001FB614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1C6F2F71F75911B001FB614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1C6F2FA1F75911B001FB614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1C6F2FC1F75911B001FB614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DA1D8A1F22909B00DCE72F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C1DA1D8E1F22935600DCE72F /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		C1DA1D901F22938E00DCE72F /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		C1DA1D921F2293AC00DCE72F /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		C1DA1D941F229B7C00DCE72F /* KeychainHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainHelperTests.swift; sourceTree = "<group>"; };
+		C1DA1D981F22A04800DCE72F /* UptakeToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UptakeToolbox.framework; path = ../Carthage/Build/iOS/UptakeToolbox.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10221601F228F6E00E40924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DA1D991F22A04800DCE72F /* UptakeToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C102216A1F228F6E00E40924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C102216E1F228F6E00E40924 /* UptakeKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C6F2EB1F75911B001FB614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C102215A1F228F6E00E40924 = {
+			isa = PBXGroup;
+			children = (
+				C1DA1D8A1F22909B00DCE72F /* README.md */,
+				C12F73A11F294506002AE1B9 /* .jazzy.yaml */,
+				C1DA1D921F2293AC00DCE72F /* Cartfile */,
+				C19A365A1F229036003667D8 /* Sources */,
+				C19A365B1F229042003667D8 /* Tests */,
+				C1C6F2EF1F75911B001FB614 /* TestHost */,
+				C10221651F228F6E00E40924 /* Products */,
+				C1DA1D971F22A04800DCE72F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C10221651F228F6E00E40924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10221641F228F6E00E40924 /* UptakeKeychain.framework */,
+				C102216D1F228F6E00E40924 /* UptakeKeychainTests.xctest */,
+				C1C6F2EE1F75911B001FB614 /* TestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C19A365A1F229036003667D8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA1D901F22938E00DCE72F /* Logging.swift */,
+				C1DA1D8E1F22935600DCE72F /* KeychainHelper.swift */,
+				C12F73A31F2945FA002AE1B9 /* KeychainService.swift */,
+				C12F73A71F2946D0002AE1B9 /* KeychainError.swift */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		C19A365B1F229042003667D8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA1D941F229B7C00DCE72F /* KeychainHelperTests.swift */,
+			);
+			name = Tests;
+			path = ../Tests;
+			sourceTree = "<group>";
+		};
+		C1C6F2EF1F75911B001FB614 /* TestHost */ = {
+			isa = PBXGroup;
+			children = (
+				C1C6F2F01F75911B001FB614 /* AppDelegate.swift */,
+				C1C6F2F21F75911B001FB614 /* ViewController.swift */,
+				C1C6F2F41F75911B001FB614 /* Main.storyboard */,
+				C1C6F2F71F75911B001FB614 /* Assets.xcassets */,
+				C1C6F2F91F75911B001FB614 /* LaunchScreen.storyboard */,
+				C1C6F2FC1F75911B001FB614 /* Info.plist */,
+			);
+			path = TestHost;
+			sourceTree = "<group>";
+		};
+		C1DA1D971F22A04800DCE72F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA1D981F22A04800DCE72F /* UptakeToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C10221611F228F6E00E40924 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C10221631F228F6E00E40924 /* UptakeKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10221781F228F6E00E40924 /* Build configuration list for PBXNativeTarget "UptakeKeychain" */;
+			buildPhases = (
+				C102215F1F228F6E00E40924 /* Sources */,
+				C10221601F228F6E00E40924 /* Frameworks */,
+				C10221611F228F6E00E40924 /* Headers */,
+				C10221621F228F6E00E40924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UptakeKeychain;
+			productName = "uptake-keychain-ios";
+			productReference = C10221641F228F6E00E40924 /* UptakeKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C102216C1F228F6E00E40924 /* UptakeKeychainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C102217B1F228F6E00E40924 /* Build configuration list for PBXNativeTarget "UptakeKeychainTests" */;
+			buildPhases = (
+				C10221691F228F6E00E40924 /* Sources */,
+				C102216A1F228F6E00E40924 /* Frameworks */,
+				C102216B1F228F6E00E40924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C10221701F228F6E00E40924 /* PBXTargetDependency */,
+				C1C6F3011F759121001FB614 /* PBXTargetDependency */,
+			);
+			name = UptakeKeychainTests;
+			productName = "uptake-keychain-iosTests";
+			productReference = C102216D1F228F6E00E40924 /* UptakeKeychainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1C6F2ED1F75911B001FB614 /* TestHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C6F2FF1F75911B001FB614 /* Build configuration list for PBXNativeTarget "TestHost" */;
+			buildPhases = (
+				C1C6F2EA1F75911B001FB614 /* Sources */,
+				C1C6F2EB1F75911B001FB614 /* Frameworks */,
+				C1C6F2EC1F75911B001FB614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestHost;
+			productName = TestHost;
+			productReference = C1C6F2EE1F75911B001FB614 /* TestHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C102215B1F228F6E00E40924 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Uptake;
+				TargetAttributes = {
+					C10221631F228F6E00E40924 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					C102216C1F228F6E00E40924 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1C6F2ED1F75911B001FB614;
+					};
+					C1C6F2ED1F75911B001FB614 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C102215E1F228F6E00E40924 /* Build configuration list for PBXProject "UptakeKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C102215A1F228F6E00E40924;
+			productRefGroup = C10221651F228F6E00E40924 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C10221631F228F6E00E40924 /* UptakeKeychain */,
+				C102216C1F228F6E00E40924 /* UptakeKeychainTests */,
+				C1C6F2ED1F75911B001FB614 /* TestHost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10221621F228F6E00E40924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12F73A21F294506002AE1B9 /* .jazzy.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C102216B1F228F6E00E40924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C6F2EC1F75911B001FB614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C6F2FB1F75911B001FB614 /* LaunchScreen.storyboard in Resources */,
+				C1C6F2F81F75911B001FB614 /* Assets.xcassets in Resources */,
+				C1C6F2F61F75911B001FB614 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C102215F1F228F6E00E40924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12F73A81F2946D0002AE1B9 /* KeychainError.swift in Sources */,
+				C1DA1D911F22938E00DCE72F /* Logging.swift in Sources */,
+				C1DA1D8F1F22935600DCE72F /* KeychainHelper.swift in Sources */,
+				C12F73A41F2945FA002AE1B9 /* KeychainService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10221691F228F6E00E40924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DA1D961F229B8300DCE72F /* KeychainHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C6F2EA1F75911B001FB614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C6F2F31F75911B001FB614 /* ViewController.swift in Sources */,
+				C1C6F2F11F75911B001FB614 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C10221701F228F6E00E40924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10221631F228F6E00E40924 /* UptakeKeychain */;
+			targetProxy = C102216F1F228F6E00E40924 /* PBXContainerItemProxy */;
+		};
+		C1C6F3011F759121001FB614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1C6F2ED1F75911B001FB614 /* TestHost */;
+			targetProxy = C1C6F3001F759121001FB614 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1C6F2F41F75911B001FB614 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1C6F2F51F75911B001FB614 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1C6F2F91F75911B001FB614 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1C6F2FA1F75911B001FB614 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C10221761F228F6E00E40924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C10221771F228F6E00E40924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C10221791F228F6E00E40924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = ../Carthage/Build/iOS;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/../Carthage/Build/iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uptake.module.Keychain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C102217A1F228F6E00E40924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = ../Carthage/Build/iOS;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/../Carthage/Build/iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uptake.module.Keychain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C102217C1F228F6E00E40924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uptake.module.Keychain-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
+			};
+			name = Debug;
+		};
+		C102217D1F228F6E00E40924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uptake.module.Keychain-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
+			};
+			name = Release;
+		};
+		C1C6F2FD1F75911B001FB614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TestHost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uptake.internal.TestHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1C6F2FE1F75911B001FB614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TestHost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uptake.internal.TestHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C102215E1F228F6E00E40924 /* Build configuration list for PBXProject "UptakeKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10221761F228F6E00E40924 /* Debug */,
+				C10221771F228F6E00E40924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10221781F228F6E00E40924 /* Build configuration list for PBXNativeTarget "UptakeKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10221791F228F6E00E40924 /* Debug */,
+				C102217A1F228F6E00E40924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C102217B1F228F6E00E40924 /* Build configuration list for PBXNativeTarget "UptakeKeychainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C102217C1F228F6E00E40924 /* Debug */,
+				C102217D1F228F6E00E40924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1C6F2FF1F75911B001FB614 /* Build configuration list for PBXNativeTarget "TestHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C6F2FD1F75911B001FB614 /* Debug */,
+				C1C6F2FE1F75911B001FB614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C102215B1F228F6E00E40924 /* Project object */;
+}
