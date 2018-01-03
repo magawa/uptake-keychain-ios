@@ -1,0 +1,17 @@
+clean: true
+author: Joshua Emmons
+author_url: https://uptake.com
+github_url: https://github.com/UptakeMobile/uptake-keychain-ios
+module: UptakeKeychain
+root_url: http://mobile-toolkit-docs.services.common.int.uptake.com/docs/uptake-keychain-ios/
+
+custom_categories:
+  - name: Helpers
+    children:
+    - KeychainHelper
+  - name: Types
+    children:
+    - KeychainService
+  - name: Errors
+    children: 
+    - KeychainError
